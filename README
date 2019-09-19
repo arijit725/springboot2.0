@@ -1,0 +1,18 @@
+SpringBoot2.x
+
+This application demonstrate different aspect of spring boot2.x:
+	1. configure application with spring boot
+	2. configure application with log4j2.xml
+	3. configure embeded tomcat with seperate port
+
+
+
+
+Note:
+	1. load log4j2.xml file from location other than default location:
+		java -Dlogging.config='/path/to/log4j2.xml' -jar spring-boot-demo.jar
+		
+	2. To run your tomcat server on specific port	
+		java  -Dserver.port=8888 -jar spring-boot-demo.jar
+	3. To load configuration from seperate properties file:
+		java -jar spring-boot-demo.jar --spring.config.location=classpath:/conf/demo.properties
